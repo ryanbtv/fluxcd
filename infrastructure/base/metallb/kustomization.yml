@@ -3,7 +3,7 @@ kind: Kustomization
 namespace: metallb
 
 resources:
-  - namespace.yaml
-  - repository.yaml
-  - release.yaml
+  - namespace.yml
+  - repository.yml
+  - release.yml
   - bgpConfigurations.yml

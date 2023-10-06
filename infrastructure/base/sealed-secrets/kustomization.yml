@@ -3,6 +3,6 @@ kind: Kustomization
 namespace: sealed-secrets
 
 resources:
-  - namespace.yaml
-  - repository.yaml
-  - release.yaml
+  - namespace.yml
+  - repository.yml
+  - release.yml
