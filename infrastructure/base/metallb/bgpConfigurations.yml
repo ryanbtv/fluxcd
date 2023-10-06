@@ -1,0 +1,41 @@
+---
+apiVersion: metallb.io/v1beta1
+kind: IPAddressPool
+metadata:
+  name: dns-pool
+  namespace: metallb
+spec:
+  addresses:
+  - 25.25.25.25/32
+
+---
+apiVersion: metallb.io/v1beta1
+kind: BGPAdvertisement
+metadata:
+  name: services-advertisement
+  namespace: metallb
+spec:
+  aggregationLength: 25
+  ipAddressPools:
+  - services-pool
+
+---
+apiVersion: metallb.io/v1beta1
+kind: BGPAdvertisement
+metadata:
+  name: dns-advertisement
+  namespace: metallb
+spec:
+  ipAddressPools:
+  - dns-pool
+
+---
+apiVersion: metallb.io/v1beta1
+kind: BFDProfile
+metadata:
+  name: bfdprofile
+  namespace: metallb
+spec:
+  detectMultiplier: 3
+  echoMode: false
+
