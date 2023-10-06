@@ -3,5 +3,5 @@ kind: Kustomization
 namespace: metallb
 
 resources:
-  - ../base/metallb
+  - ../../base/metallb
   - bgpConfiguration.yml

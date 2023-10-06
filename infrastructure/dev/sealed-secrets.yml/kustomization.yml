@@ -3,4 +3,4 @@ kind: Kustomization
 namespace: sealed-secrets.yml
 
 resources:
-  - ../base/sealed-secrets
+  - ../../base/sealed-secrets
