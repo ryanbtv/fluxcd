@@ -12,12 +12,12 @@ spec:
 apiVersion: metallb.io/v1beta1
 kind: BGPAdvertisement
 metadata:
-  name: services-advertisement
+  name: k3s-advertisement
   namespace: metallb
 spec:
   aggregationLength: 25
   ipAddressPools:
-  - services-pool
+  - k3s-pool
 
 ---
 apiVersion: metallb.io/v1beta1

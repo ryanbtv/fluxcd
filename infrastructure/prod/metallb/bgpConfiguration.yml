@@ -2,7 +2,7 @@
 apiVersion: metallb.io/v1beta1
 kind: IPAddressPool
 metadata:
-  name: services-pool
+  name: k3s-pool
   namespace: metallb
 spec:
   addresses:
@@ -12,7 +12,7 @@ spec:
 apiVersion: metallb.io/v1beta2
 kind: BGPPeer
 metadata:
-  name: ff-icr01.lan
+  name: ff-icr01
   namespace: metallb
 spec:
   myASN: 65100
