@@ -5,3 +5,4 @@ resources:
   - metallb
   - sealed-secrets
   - cert-manager
+  - weave-gitops
