@@ -17,3 +17,7 @@ spec:
     crds: CreateReplace
   upgrade:
     crds: CreateReplace
+  values:
+    speaker:
+      frr:
+        enabled: true
