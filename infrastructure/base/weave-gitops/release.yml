@@ -34,7 +34,7 @@ spec:
       create: true
       createClusterRole: true
       createSecret: false
-      username: ryanb
+      username: admin
     metrics:
       enabled: true
     service:
