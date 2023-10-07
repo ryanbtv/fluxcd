@@ -1,0 +1,13 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: ryanbtv-cert
+  namespace: default
+spec:
+  secretName: ryanbtv-cert
+  issuerRef:
+    name: letsencrypt
+    kind: ClusterIssuer
+  commonName: "*.ryanb.tv"
+  dnsNames:
+  - "*.ryanb.tv"

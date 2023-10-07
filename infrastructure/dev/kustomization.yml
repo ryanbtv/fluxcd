@@ -4,3 +4,4 @@ kind: Kustomization
 resources:
   - metallb
   - sealed-secrets
+  - cert-manager
